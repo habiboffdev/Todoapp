@@ -1,0 +1,30 @@
+{%extends 'base.html'%}
+{%block title%}Other Projects{% endblock title%}
+{%block content%}
+{%load static%}
+<div class="container">
+    <h1>My Projects</h1>
+    <div class="row">
+        <div class="col-sm-6">
+    <div class="card" style="width: 25rem;">
+        <img class="card-img-top" src="{%static 'logo.jpg'%}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Musilmanuz</h5>
+          <p class="card-text">This is my simple website. On this site you can find audio and translation of Quranic verses, be aware of prayer times.</p>
+          <a href="https://Musilmanuz.herokuapp.com/" class="btn btn-primary">Open website</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card" style="width: 25rem;">
+        <img class="card-img-top" src="{%static 'logo.png'%}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Mirzo-dev</h5>
+          <p class="card-text">This is my first website. On this site you can be aware articles and news</p>
+          <a href="https://mirzo-dev.herokuapp.com/" class="btn btn-primary">Open website</a>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+{%endblock%}
